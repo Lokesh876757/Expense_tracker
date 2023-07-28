@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <!-- Add your CSS styling here or link an external stylesheet -->
+  <style>
+    /* Sample CSS styling, customize as per your preferences */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 230px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .remember-me {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .forgot-password {
+      float: right;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div class="remember-me">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember Password</label>
+      </div>
+
+      <div class="forgot-password">
+        <a href="forgot_password.php">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="signup-link">
+      <a href="index.html">Sign Up</a>
+    </div>
+  </div>
+</body>
+</html>
